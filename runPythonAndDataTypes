@@ -15,3 +15,6 @@ Anything in '' or "" are a string
 To put 2 strings together, use + operator
 For user input, use input() function
     input(<prompt>)
+
+// is whole number division (truncates result)
+% mod
