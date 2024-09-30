@@ -1,0 +1,12 @@
+Lists
+    A container of things
+    numebrs, strings, numbers and strings, lists, etc
+    lists.append() to add an item to a list
+    lists.remove() to remove an item
+
+Loops
+    A way to keep doing something given a condition
+    for x in list:
+        #code
+    range function() to generate a range of numbers
+    range(<start>, <stop>, <step>)
