@@ -5,3 +5,13 @@ why python?
 Can write python in shell or in a file
     shell can be run in terminal through cmd python3
 Don't need to define types; python assumes type beased on assigned value
+
+To print: print (<string>)
+To convert float to int, use int cmd
+    int(10.6)
+Vice versa true
+    float(10)
+Anything in '' or "" are a string
+To put 2 strings together, use + operator
+For user input, use input() function
+    input(<prompt>)
