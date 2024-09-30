@@ -1,0 +1,25 @@
+Conditionals
+    Help make decisions in python
+    < <= == >= > !=
+    Same as every other langauge
+    use if keyword to evalulate conditionals
+        if temp > 80:
+            print("It's too damn hot")
+    indented code is what's run when condition is true
+    else keyword to run code if if statemet is false
+        if temp > 80:
+            print("It's too damn hot")
+        else:
+            print("Good weather")
+    elif for additional conditionals
+        if temp > 80:
+            print("It's too damn hot")
+        elif (temp < 50):
+            print("It's cold")
+        else:
+            print("Good weather")
+    or and and keywords can be used to combine conditioanls
+        if temp > 80 or temp < 50:
+            print ("stay inside")
+        else:
+            print("go outside")
