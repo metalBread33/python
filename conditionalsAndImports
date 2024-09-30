@@ -23,3 +23,8 @@ Conditionals
             print ("stay inside")
         else:
             print("go outside")
+
+Imports
+    Python comes wiht built in fucnaitonality, need to import python standard
+        library
+    import keyword to use modules

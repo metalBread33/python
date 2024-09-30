@@ -1,5 +1,6 @@
+from random import randint #gets only the randint func
 
-computerChoice = 3
+computerChoice = randint(1,3)
 userChoice = int(input('Rock, paper, or scissors? \n1) Rock\n2) Paper \n3) Scissors\n'))
 
 if computerChoice == userChoice:
