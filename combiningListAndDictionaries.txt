@@ -1,0 +1,6 @@
+can have a contaner of containers in python
+    use 2 indexes to get an individual item
+    1 index to get a whole containers
+use a dictionary of lists for easy readability 
+menu() func to get what is in the dictionary
+dictionaries can be used to represent object
