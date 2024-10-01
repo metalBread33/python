@@ -1,0 +1,9 @@
+Can get data from internet
+    HTTP request gets data 
+    JSON is how the data comes
+        Lists and dictionaries
+        Javascript Object Notation
+Python HTTP request library
+PIP is used to install packages
+    pip --version to check if you have pip installed
+    pip install <package>
