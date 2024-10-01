@@ -1,0 +1,21 @@
+designing programs to be organized around data or objects
+as programs get large and compliacted, shit can hit the fan real fast
+    oop helps shit not the fan
+
+self object refers to the object
+    this is c++
+
+example
+    class Robot_Dog:
+
+        def __init__(self, name, breed):
+            self.name = name
+            self.breed - breed
+
+        def bark(self):
+            print('woof')
+
+    def main():
+        myDog = Robot_Dog('Spot', 'Bulldog')
+        print(myDof.name)
+        my_dog.bark()
