@@ -1,0 +1,11 @@
+'mini programs'
+def <func_name>(<param list>):
+    <code>
+functions need to be defined before they are called
+global vars can be used in any function, don't need to be passed as a param
+    global vars are pretty shit
+Why use functions?
+    Reuse
+    Clarity
+return keyword used to return a value after a function is over
+can create a main function too for more organization 
