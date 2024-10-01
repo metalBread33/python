@@ -1,0 +1,7 @@
+Can help with managing different versions of project
+Manages what packages are installed for the project
+
+python3 -m venv <path to virtual env>
+
+to activate venv:
+    source <path> activate
