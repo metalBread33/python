@@ -1,0 +1,13 @@
+Alternative for 2 related lists
+Maps keys to values
+    Acronyms and translations for example
+    acronyms = {'LOL' : 'laught out loud,
+        'IDK' : "I don't know",
+        'TBH': "To be honest"}
+Can hold anything you want
+acronyms = {} ==> empty dictionary
+To add: acronyms['LOL'] = "laugh out loud"
+    Keys are used in lieu of index
+use get method to prevent key error if key doesn't exist
+    returns None type (absence of value)
+        def = acronyms.get('BTW')
