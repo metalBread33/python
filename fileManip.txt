@@ -1,0 +1,10 @@
+several built-in modules for handling files
+    os 
+    shutil
+    pathlib
+os.scandir(folder)
+    returns pointer to list of file objects
+os.path.join(folder_destination, 'filename')
+    this func can alter string to be appropriate for file
+    creates absolute path from params
+os.rename to move file to new path - or just rename
