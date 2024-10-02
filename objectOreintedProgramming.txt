@@ -19,3 +19,24 @@ example
         myDog = Robot_Dog('Spot', 'Bulldog')
         print(myDof.name)
         my_dog.bark()
+
+
+Class inheritance
+    is-a relationship
+    a dog IS A animal
+    derived class based on base class
+
+    class Parent:
+        def __init__(self):
+            #code 
+        def func1(self):
+            #code
+        
+    class inherited(Parent):
+        #code
+
+    Can call any func from inherited or parent class
+    by default uses parent init method
+    if both have the same function, child class func runs by default 
+        super() allows for parent class func to run
+            super().func()
