@@ -1,0 +1,14 @@
+Exception occurs when operation throws an error
+    shows where the error happened
+use try except blocl
+    try:
+        #code
+    except:
+        print("error message")
+    finally:
+        print("runs no matter what")
+program keeps running after try excpet block
+
+can use raise to throw a speciic error given a condition
+    raise ZeroDivisionError
+    raise Exception("cannot divide by zero)
