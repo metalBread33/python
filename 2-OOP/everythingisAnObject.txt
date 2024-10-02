@@ -1,0 +1,9 @@
+need oop for handeling complex data
+a class is essentially a new type that you create
+attributes of an object contain all of the details
+classes can have their own functions
+    read and alter states to an object
+objects have a __class__ attribute that shows what class they belong to
+everything is an object in python
+You should use oop when it makes since
+    simple scripts are not a good idea to use oop 
