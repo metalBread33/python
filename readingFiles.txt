@@ -1,0 +1,11 @@
+need to use full path to reach a file if file is not in the same path
+if file is in the same dir as program, can use relative path
+
+open function returns file object
+with keyword makes sure file will be closed once its done 
+    with open('file.txt') as file:
+        #code
+read() function returns whole file as string
+readline() returns next line of file as string
+readlines() returns list of string as list
+    shortcut: loop over file 

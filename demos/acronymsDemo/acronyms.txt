@@ -1,0 +1,2 @@
+FIFO - First in First Out
+OOP - Object Oriented Programming
