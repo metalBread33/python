@@ -1,0 +1,24 @@
+objects are like dictionaries in python
+constructors call __new__ to allocate memory for a new object and send it to __init__ function
+__init__ reveives objec from __new__ as a 'self' parameter
+attributes stored as keys in objects internal dictionary
+use internal dictionary (__dict__) for debugging; . syntax works fine as well
+
+instances functions deal with instances of a class 
+    also called methods
+    can call them from class or instance
+        if instance case you do not need to pass it in as a parameter
+
+__str__ method turns object into string
+    if not defined in class, default is called
+    __str__ called when converting object into a string
+
+__repr__ returns offcial string representation of an object
+    what is used by developers
+    try to make it similar to instantiation
+
+functions and attributes with __ __ are special and don't want any collisions with them
+    don't start and end methods with double underscore unless one of the special methods
+    also called dunder methods
+meant to be called indiretly
+    dunders for operators and a whole lot of other stuff
