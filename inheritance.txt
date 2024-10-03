@@ -1,0 +1,19 @@
+inheritance helps with DRY
+    reusing shared data between classes
+    base class --> derived class
+functions and attributes passed
+
+base class in () when defining derived class
+    class Base:
+        #blah blah blah
+
+    class Derived (Base):
+        #blah blah blah
+
+even if derived is empty, objects made with derived class inherit all of base class functionality
+to call base class functiuon in derived clas, prefix func call with super
+    super().func()
+
+can override methods in derived class
+
+polymorphism --> one thing can take on many forms
