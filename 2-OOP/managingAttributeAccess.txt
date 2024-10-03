@@ -26,3 +26,7 @@ python supports properties
             #code
 to make a read only property, either don't define a setter or raise attribute error in setter
 for write only property, need to raise AttributeError in getter
+
+property decorated attributes can return anything, not variables
+    computed properties are functions that act like attributes
+    if function takes a while, cache the result
