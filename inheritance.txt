@@ -17,3 +17,15 @@ to call base class functiuon in derived clas, prefix func call with super
 can override methods in derived class
 
 polymorphism --> one thing can take on many forms
+
+Slot --> optional feature to reduce memory overhead and faster attribute access
+    declare __slots__ with all instance attributes
+    cannot dynamically add new attributes to instance with slots
+
+
+multiple inheritance --> inherit functionality from more than one parent class  mostly used for 'mixin' classes
+    add additional functionality without having to change base class and other derived classes
+
+method resolution order
+    how the object determines whic version of a function to use
+    use __mro__ attribute to see

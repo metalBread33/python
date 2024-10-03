@@ -1,4 +1,5 @@
 class Employee:
+    __slots__ = ('name', 'age', 'salary')
     def __init__(self, name, age, salary):
         self.name = name
         self.age = age
@@ -9,12 +10,19 @@ class Employee:
         return self.salary
 
 
+class SlotsInspectorMixin:
+    def has_slots(self):
+        return hasattr(self, "__slots__")
+
+
 class Tester(Employee):
     def run_tests(self):
         print(f"Testing is started by {self.name} ... ")
         print("Testing is done")
 
-class Developer(Employee):
+class Developer(Employee, SlotsInspectorMixin):
+    __slots__ = ('framework')
+
     def __init__(self, name, age, salary, framework):
         super().__init__(name, age, salary)
         self.framework = framework
@@ -37,3 +45,5 @@ emp1.run_tests()
 emp2 = Developer('John', 25, 100000, 'PERN')
 emp2.increase_salary(10, 2000)
 print(emp2)
+print(emp2.has_slots())
+print(Developer.__mro__)
