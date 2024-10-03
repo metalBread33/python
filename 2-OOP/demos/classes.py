@@ -2,24 +2,26 @@ class Employee:
     def __init__(self, name, age, salary):
         self.__dict__['name'] = name
         self.age = age
-        self.salary = salary
+        self.__salary = salary
     
     def printInfo(self):
-        print(self.name, 'is', self.age, 'years old and makes $', self.salary)
+        print(self.name, 'is', self.age, 'years old and makes $', self.__salary)
     
     def __str__(self):
         return f"I am printing {self.name}'s info"
     
     def __repr__(self):
-        return f"Employee({repr(self.name)}, {repr(self.age)}, {repr(self.salary)})"
+        return f"Employee({repr(self.name)}, {repr(self.age)}, {repr(self.__salary)})"
     
     def get_salary(self):
-        return self.salary
+        return self.__salary
     
     def set_salary(self, salary):
         #not pythonic way
-        if salary < 1000:
+        if salary <= 1000:
             raise ValueError('Minimum wage is $1000') #validates salary
+        else: 
+            self.__salary = salary
 
 e = Employee('kev', 22, 72561)
 print (e)

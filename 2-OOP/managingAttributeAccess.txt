@@ -1,1 +1,15 @@
 use getter and setters to access attributes instead of doing it directly
+
+pillars of OOP:
+    abstraction
+        display basic info and hide implemetation
+        user only needs to have the interface    
+    encapsulation
+        class instances should group related data and method
+        hiding data attributes whch are only used for internal implementation purposes
+access modifiers can be used to prevent users from doing things they aren't supposed to
+    python doesn't have things
+    start non-publuc by using _ at the beginning
+        users can still access attributes
+name mangaling: start attribute name with __ 
+    messes with name when outside of class; harder for user to access
