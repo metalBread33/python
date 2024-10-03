@@ -2,7 +2,7 @@ class Employee:
     def __init__(self, name, age, salary):
         self.__dict__['name'] = name
         self.age = age
-        self.__salary = salary
+        self.set_salary(salary)
     
     def printInfo(self):
         print(self.name, 'is', self.age, 'years old and makes $', self.__salary)
@@ -14,6 +14,11 @@ class Employee:
         return f"Employee({repr(self.name)}, {repr(self.age)}, {repr(self.__salary)})"
     
     def get_salary(self):
+        return self.__salary
+    
+    #property getter
+    @property
+    def salary(self):
         return self.__salary
     
     def set_salary(self, salary):
@@ -40,3 +45,4 @@ print(e.get_salary())
 print("Setting salary to 20000")
 e.set_salary(20000)
 print(e.get_salary())
+print("printing from property", e.salary)

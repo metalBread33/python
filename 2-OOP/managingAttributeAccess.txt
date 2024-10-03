@@ -13,3 +13,8 @@ access modifiers can be used to prevent users from doing things they aren't supp
         users can still access attributes
 name mangaling: start attribute name with __ 
     messes with name when outside of class; harder for user to access
+
+python supports properties
+    use class decarator
+        @property
+    essential a read only data attribute
