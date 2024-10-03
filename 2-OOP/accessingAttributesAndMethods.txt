@@ -1,0 +1,6 @@
+New object created with python sees a function or a class
+    functions are an attribute of a class
+@classmethod decorator to create methods that can only be accessed in the class
+    @classmethod
+    def class_func(cls):
+        #code
