@@ -1,10 +1,10 @@
 class Employee:
-    def __init__(self, name, age, salary):
+    def __init__(self, name, age, salary, SSN):
         self.__dict__['name'] = name
         self.age = age
         #self.set_salary(salary)
         self.salary = salary #properties provide validation
-        
+        self.__ssn = SSN
 
     
     def printInfo(self):
@@ -39,6 +39,7 @@ class Employee:
         else: 
             self.__salary = salary
 
+    #read only example
     @property
     def readOnly(self):
         return 'readOnly'
@@ -46,8 +47,18 @@ class Employee:
     @readOnly.setter
     def readOnly(self, readOnly):
         raise AttributeError('attribute is read only')
+    
+    #write only example
+    @property
+    def ssn(self):
+        return("Cannot access write only attribute")
+    
+    @ssn.setter
+    def ssn(self, SSN):
+        self.__ssn = SSN
 
-e = Employee('kev', 22, 72561)
+
+e = Employee('kev', 22, 72561, '0')
 print (e)
 print(e.__dict__)  
 e.printInfo()
@@ -75,3 +86,12 @@ except:
     print("this is attribute doesn't change")
 finally:
     print(e.readOnly)
+
+#write only attribute example
+print("Changing ssn")
+e.ssn = '000-00-0000'
+print("Change completed")
+try:
+    print(e.ssn)
+except:
+    print("Cannot print write only attribute")
