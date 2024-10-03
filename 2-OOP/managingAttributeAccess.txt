@@ -1,0 +1,1 @@
+use getter and setters to access attributes instead of doing it directly
