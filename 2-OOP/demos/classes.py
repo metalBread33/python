@@ -2,7 +2,10 @@ class Employee:
     def __init__(self, name, age, salary):
         self.__dict__['name'] = name
         self.age = age
-        self.set_salary(salary)
+        #self.set_salary(salary)
+        self.salary = salary #properties provide validation
+        
+
     
     def printInfo(self):
         print(self.name, 'is', self.age, 'years old and makes $', self.__salary)
@@ -28,6 +31,22 @@ class Employee:
         else: 
             self.__salary = salary
 
+    #property setter
+    @salary.setter
+    def salary(self, salary):
+        if salary <= 1000:
+            raise ValueError('Minimum wage is $1000') #validates salary
+        else: 
+            self.__salary = salary
+
+    @property
+    def readOnly(self):
+        return 'readOnly'
+    
+    @readOnly.setter
+    def readOnly(self, readOnly):
+        raise AttributeError('attribute is read only')
+
 e = Employee('kev', 22, 72561)
 print (e)
 print(e.__dict__)  
@@ -46,3 +65,13 @@ print("Setting salary to 20000")
 e.set_salary(20000)
 print(e.get_salary())
 print("printing from property", e.salary)
+
+#read only attribute example
+print(e.readOnly)
+
+try:
+    e.readOnly = "overwrite"
+except:
+    print("this is attribute doesn't change")
+finally:
+    print(e.readOnly)

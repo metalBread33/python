@@ -17,4 +17,12 @@ name mangaling: start attribute name with __
 python supports properties
     use class decarator
         @property
+        def func(self):
+            #code
     essential a read only data attribute
+    for property setters, syntax is a little different
+        @attribute.setter
+        def attribute(self, attribute):
+            #code
+to make a read only property, either don't define a setter or raise attribute error in setter
+for write only property, need to raise AttributeError in getter
