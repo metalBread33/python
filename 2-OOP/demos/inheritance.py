@@ -15,8 +15,16 @@ class Tester(Employee):
         print("Testing is done")
 
 class Developer(Employee):
+    def __init__(self, name, age, salary, framework):
+        super().__init__(name, age, salary)
+        self.framework = framework
+    
     def increase_salary(self, percent, bonus=0):
         self.salary = (super().increase_salary(percent) + bonus)
+    
+    def __str__(self):
+        return ( f"Name: {self.name}\nAge: {self.age}\n" + 
+        f"Salary: {self.salary}\nFramework: {self.framework}")
 
 emp1 = Tester('Kev', 22, 72561)
 print(emp1.salary)
@@ -26,6 +34,6 @@ print(emp1.salary)
 
 emp1.run_tests()
 
-emp2 = Developer('John', 25, 100000)
+emp2 = Developer('John', 25, 100000, 'PERN')
 emp2.increase_salary(10, 2000)
-print(emp2.salary)
+print(emp2)
