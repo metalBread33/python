@@ -1,0 +1,15 @@
+Relitivelty new feature
+need to import dataclasses from dataclass module
+    @dataclass
+    class Project:
+        name: str 
+        payment: int 
+        client: str 
+gets rid of boilerplate for classes that just hold data
+
+type hints hint at the type you want a variable to have
+    varName: <type>
+can use for dataclasses, function params, returns, etc 
+Can use the any type if you don't care
+    from typing import Any
+    name: Any
